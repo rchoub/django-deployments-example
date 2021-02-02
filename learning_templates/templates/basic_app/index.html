@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+{% load templatetags %}
+  {% block body_block %}
+    <h1>WELCOME TO INDEX PAGE</h1>
+    <h2>THIS IS INDEX.HTML PAGE SHOWING!</h2>
+
+    <h3>{{ text|cut:'world' }}</h3>
+    <h3>{{ number|add:"11" }}</h3>
+  {% endblock %}
